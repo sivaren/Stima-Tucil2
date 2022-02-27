@@ -1,23 +1,28 @@
-import numpy as np
-from numpy.linalg import *
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+from sklearn import datasets 
+from scipy.spatial import ConvexHull
+from algo import *
 
-# l=[[1,4],[2,7],[10,1],[1,2],[10,6],[2,1]]
-# lSort = sorted(l,key=lambda x: (x[0],x[1]))
-# print(lSort)
-# print(lSort[0], lSort[len(lSort)-1])
+data = datasets.load_iris() 
+#create a DataFrame 
+df = pd.DataFrame(data.data, columns=data.feature_names) 
+df['Target'] = pd.DataFrame(data.target) 
+print(df.shape)
+# df.head()
+plt.figure(figsize = (10, 6))
+colors = ['b','r','g']
+plt.title('Petal Width vs Petal Length')
+plt.xlabel(data.feature_names[0])
+plt.ylabel(data.feature_names[1])
 
-a1 = 0
-a2 = 5
-b1 = 5
-b2 = 0
-c1 = -1
-c2 = 0
-det = a1*b2 + c1*a2 + b1*c2 - c1*b2 - b1*a2 - a1*c2
-# print(det)
-
-# a = [0,0]
-# b = [5,0]
-# c = [3,6.7]
-# d = abs((b[0]-a[0])*(a[1]-c[1]) - (a[0]-c[0])*(b[1]-a[1])) / np.sqrt(np.square(b[0]-a[0]) + np.square(b[1]-a[1]))
-# print(d)
-
+for i in range(len(data.target_names)):
+    bucket = df[df['Target'] == i]
+    bucket = bucket.iloc[:,[0,1]].values
+    hull = myConvexHull(bucket) # bagian ini diganti dengan hasil implementasi ConvexHull Divide & Conquer
+    plt.scatter(bucket[:, 0], bucket[:, 1], label=data.target_names[i])
+    for simplex in hull:
+        plt.plot(bucket[simplex, 0], bucket[simplex, 1], colors[i])
+        
+plt.show()
