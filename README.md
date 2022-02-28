@@ -53,7 +53,7 @@ pip install sklearn
 **Menggunakan VS Code**
 > Buka folder src, lalu buka file mainVisualize.ipynb
 > Jika VS Code belum support file `.ipynb`, lakukan instalasi extension `Jupyter Notebook`
-> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas 
+> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell` dengan menekan tombol `Shift + Enter`, pastikan `Cell` dijalankan terurut dari `Cell` teratas 
 
 ## Project Status
 > **Project is: Completed**
