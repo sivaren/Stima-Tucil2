@@ -45,7 +45,7 @@ pip install sklearn
 **Menggunakan Jupyter Notebook**
 * Pastikan repository ini terletak pada path yang sama tempat anda menginstall Jupyter Notebook
 * Buka terminal Jupyter Notebook (anda akan dituntun ke local host)
-* Buka folder src, lalu buka file mainVisualize.ipynb
+* Buka folder src, lalu buka file `mainVisualize.ipynb`
 * Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas
 
 **Menggunakan VS Code**
