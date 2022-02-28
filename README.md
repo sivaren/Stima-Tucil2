@@ -16,9 +16,11 @@ Implementasi Convex Hull untuk Visualisasi Tes Linear Separability Dataset denga
 * [Author](#author)
 
 ## General Information
-> ...
+> Pembuatan pustaka (library) `myConvexHull` sederhana dalam bahasa Python yang dapat mengembalikan convex hull dari kumpulan data 2 dimensi (dapat dianggap kumpulan titik 2 dimensi)
 
 ## Prerequisites
+**Telah melakukan instalasi `Jupyter Notebook`**
+
 > **Pastikan branch repository berada di `main`** </br>
 
 **Clone repository ini menggunakan command berikut (git bash)**
@@ -26,16 +28,35 @@ Implementasi Convex Hull untuk Visualisasi Tes Linear Separability Dataset denga
 $ git clone https://github.com/sivaren/Stima-Tucil2.git
 ```
 
+**Arahkan path ke src foldrr**
+```
+cd src
+```
+
+**Lakukan instalasi beberapa modul menggunakan `pip`**
+```
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install sklearn
+```
+
 ## Run Program
 > **To first setup this project run** </br>
 
-**Open `cmd` on this folder**
-```
-    ...
-```
+**Menggunakan Jupyter Notebook**
+> Pastikan repository ini terletak pada path yang sama tempat anda menginstall Jupyter Notebook
+> Buka terminal Jupyter Notebook (anda akan dituntun ke local host)
+> Buka folder src, lalu buka file mainVisualize.ipynb
+> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas
+
+**Menggunakan VS Code**
+> Buka folder src, lalu buka file mainVisualize.ipynb
+> Jika VS Code belum support file `.ipynb`, lakukan instalasi extension `Jupyter Notebook`
+> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas 
 
 ## Project Status
-> **Project is: _in progress_**
+> **Project is: Completed**
 
 ## Author
 <table>
