@@ -42,18 +42,16 @@ pip install sklearn
 ```
 
 ## Run Program
-> **To first setup this project run** </br>
-
 **Menggunakan Jupyter Notebook**
-> Pastikan repository ini terletak pada path yang sama tempat anda menginstall Jupyter Notebook
-> Buka terminal Jupyter Notebook (anda akan dituntun ke local host)
-> Buka folder src, lalu buka file mainVisualize.ipynb
-> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas
+* Pastikan repository ini terletak pada path yang sama tempat anda menginstall Jupyter Notebook
+* Buka terminal Jupyter Notebook (anda akan dituntun ke local host)
+* Buka folder src, lalu buka file mainVisualize.ipynb
+* Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell`, pastikan `Cell` dijalankan terurut dari `Cell` teratas
 
 **Menggunakan VS Code**
-> Buka folder src, lalu buka file mainVisualize.ipynb
-> Jika VS Code belum support file `.ipynb`, lakukan instalasi extension `Jupyter Notebook`
-> Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell` dengan menekan tombol `Shift + Enter`, pastikan `Cell` dijalankan terurut dari `Cell` teratas 
+* Buka folder src, lalu buka file mainVisualize.ipynb
+* Jika VS Code belum support file `.ipynb`, lakukan instalasi extension `Jupyter Notebook`
+* Anda dapat melakukan `Run All` untuk menjalankan semua `Cell` sekaligus atau dapat dilakukan bertahap tiap `Cell` dengan menekan tombol `Shift + Enter`, pastikan `Cell` dijalankan terurut dari `Cell` teratas 
 
 ## Project Status
 > **Project is: Completed**
